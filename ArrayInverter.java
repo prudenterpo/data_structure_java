@@ -41,6 +41,5 @@ public class ArrayInverter  {
 			System.out.print(value + " ");
 		}
 
-		scanner.close();
 	}	
 }
