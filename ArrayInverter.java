@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +8,7 @@ public class ArrayInverter  {
 	public static int[] invertArray(int[] inputArray) {
 		int[] invertedArray = new int[inputArray.length];
 
-		for (int i = 0; i < inputArray.length; i++) {;
+		for (int i = 0; i < inputArray.length; i++) {
 				invertedArray[i] = inputArray[inputArray.length - 1 - i];
 		}
 		return invertedArray;
@@ -29,7 +30,7 @@ public class ArrayInverter  {
 				intList.add(Integer.parseInt(stringValue));
 
 			} catch (NumberFormatException e) {
-				System.out.println(stringInput + "is not a valid integer!");
+				System.out.println(Arrays.toString(stringInput) + "is not a valid integer!");
 			}
 		}
 
